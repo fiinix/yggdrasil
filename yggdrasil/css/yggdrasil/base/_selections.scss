@@ -1,0 +1,13 @@
+
+$primaryColor: #009899 !default;
+
+::-moz-selection {
+	background: $primaryColor;
+	text-shadow: none;
+	color: contrast($primaryColor);
+}
+::selection {
+	background: $primaryColor;
+	text-shadow: none;
+	color: contrast($primaryColor);
+}

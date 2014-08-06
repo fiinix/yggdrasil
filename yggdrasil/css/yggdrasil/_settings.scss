@@ -1,0 +1,91 @@
+/**
+ * Yggdrasil
+ *
+ * Don't overwrite the settings in this file, instead create a new file and
+ * use these variables as references in your _theme.scss.
+ */
+
+$yggdrasilNameSpace: null !default;
+
+// Grid
+$gridColumnCount: 24;
+$gridMaxWidth: 1032;
+
+// Foundation breakpoints, mindre än 640px, 641px, 1025, 1441, 1921 
+$breakpointSmall: 481;
+$breakpointMedium: 769;
+$breakpointLarge: 1025;
+
+
+/*
+ * ==============
+ *
+ *	Palette
+ *
+ * ==============
+ *
+ * 1. Every other hue grows from this one.
+ * 2. Choose between the following color schemes; monocromatic, analogous,
+ * complementary, split, triadic or tetradic.
+ * 3. Input a value between 1-100 to 
+ */
+$primaryColor: #009899; /* #009899 hsla(345,87%,43%,1) */
+$colorScheme: split; /* [2]  */
+$deviate: 10; /* [3] */
+
+$secondaryColor: secondaryColor();
+$tertiaryColor: tertiaryColor();
+$accentColor: accentColor();
+
+$blackColor: #222; /* protected variables */
+$whiteColor: #eee; /* protected variables */
+/*
+ * ==============
+ *
+ *	Typography
+ *
+ * ==============
+ */
+$fontSize:					18;
+$fontLeading:				27;
+$fontScale:					1.5;
+$charactersPerLine:			66;
+
+$fontWeight:				300;
+$fontFamily:				'Georgia', Arial, sans-serif;
+
+$headingWeight: 			900;
+$headingFamily: 			'Alegreya', Georgia, serif;
+
+
+// 
+
+
+/**
+ * Padding
+ *
+ * Default values are derived from $fontLeading, which is set at 24px
+ */
+
+$topPadding: em($fontLeading /2);
+$rightPadding: em($fontLeading);
+$bottomPadding: em($fontLeading /2);
+$leftPadding: em($fontLeading);
+
+// Margin
+$topMargin: 0;
+$rightMargin: 0;
+$bottomMargin: em($fontLeading);
+$leftMargin: 0;
+
+// Radii
+$topRadius: em( $fontLeading /6);
+$rightRadius: em( $fontLeading /6);
+$bottomRadius: em( $fontLeading /6);
+$leftRadius: em( $fontLeading /6);
+
+//Transition
+$transitionPropertyDefault: all;
+$transitionDurationDefault: 150ms;
+$transitionTimingDefault: ease-in-out;
+$transitionDelayDefault: 0ms;

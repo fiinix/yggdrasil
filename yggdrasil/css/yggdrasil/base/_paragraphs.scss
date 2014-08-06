@@ -1,0 +1,9 @@
+p {
+	margin: 0 0 em($fontLeading) 0;
+	// max-width: $fontSize/$fontLineLength * 120em; /* 16/66 * 120 */
+}
+.lead {
+	font-style: italic;
+	font-size: pow($fontScale, 1) +em;
+	line-height: 1;
+}

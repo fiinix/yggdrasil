@@ -1,0 +1,174 @@
+/*
+        Default values in case they haven't been defined in _base
+======================= */
+// $grid-column-width: 20 !default;
+// $grid-gutter-width: 24 !default;
+// $grid-columns: 24 !default;
+// $gridMaxWidth: 1200 !default;
+// $base-multiplier: 1.5 !default;
+$breakpointMedium: 769 !default;
+
+$gridColumnCount: 24 !default;
+$fontLeading: 27 !default;
+$gridMaxWidth: 1032 !default;
+
+// $gridColumnWidth: ($gridMaxWidth - ($gridGutterWidth * ($gridColumnCount - 1))) / $gridColumnCount !default;
+
+$_corr: 1/$gridColumnCount; /* 0.05 0.0415*24 */
+
+// $_margin: percentage($gridGutterWidth / $gridMaxWidth);
+// $_margin: em($fontLeading);
+
+/*
+		Grid Maker
+======================= */
+.row {
+    @extend %clearfix;
+    
+	width:100%;
+	// max-width: em($gridMaxWidth);
+	margin:0 auto;
+	position: relative;
+}
+
+%column {
+    float: left;
+    position: relative;
+    // width: calc(100% - #{em($gridGutterWidth)});
+    // margin:0 .75em;
+    width: 100%;
+}
+
+// Loop through all the columns and generate the correct width
+// use @extend to pull in common styles
+
+@for $i from 1 through $gridColumnCount {
+    .span-#{$i} {
+        @extend %column;
+
+        @include mq($breakpointMedium) {
+                width: calc(#{percentage($i/$gridColumnCount)} - #{em($fontLeading * (($gridColumnCount - $i) * $_corr))});
+                margin: 0 em($fontLeading) 0 0;
+        } 
+    }
+}
+
+// [class~="#{$inuit-namespace}1/1"]
+
+// Named columns
+
+/**
+ * Classes can take a fraction-like format (e.g. `.2/3`) or a spoken-
+ * word format (e.g. `two-thirds`).
+ */
+
+[class~="span-quarter"],
+[class~="span-1/4"] {
+    @extend %column;
+
+    .keep & {
+        width: calc(#{100% * 0.25} - #{em($fontLeading * 0.75)});
+        margin: 0 em($fontLeading) 0 0;
+    }
+    @include mq($breakpointMedium) {
+        width: calc(#{100% * 0.25} - #{em($fontLeading * 0.75)});
+        margin: 0 em($fontLeading) 0 0;
+    }
+    
+}
+.span-three-quarters {
+    @extend %column;
+
+    .keep & {
+        width: calc(#{100% * 0.75} - #{em($fontLeading * 0.25)});
+        margin: 0 em($fontLeading) 0 0;
+    }
+    @include mq($breakpointMedium) {
+        width: calc(#{100% * 0.75} - #{em($fontLeading * 0.25)});
+        margin: 0 em($fontLeading) 0 0;
+    }
+    
+}
+.span-third {
+    @extend %column;
+
+    .keep & {
+        width: calc(#{100% * 0.3333} - #{em($fontLeading * 0.6666)});
+        margin: 0 em($fontLeading) 0 0;
+    }
+    @include mq($breakpointMedium) {
+        width: calc(#{100% * 0.3333} - #{em($fontLeading * 0.6666)});
+        margin: 0 em($fontLeading) 0 0;
+    }
+    
+}
+.span-two-thirds {
+    @extend %column;
+
+    .keep & {
+        width: calc(#{100% * 0.6666} - #{em($fontLeading * 0.3333)});
+        margin: 0 em($fontLeading) 0 0;
+    }
+    @include mq($breakpointMedium) {
+        width: calc(#{100% * 0.6666} - #{em($fontLeading * 0.3333)});
+        margin: 0 em($fontLeading) 0 0;
+    }
+    
+}
+.span-half,
+[class~="span-1/2"] {
+    @extend %column;
+
+    .keep & {
+        width: calc(#{100% * 0.5} - #{em($fontLeading * 0.5)});
+        margin: 0 em($fontLeading) 0 0;
+    }
+    @include mq($breakpointMedium) {
+        width: calc(#{100% * 0.5} - #{em($fontLeading * 0.5)});
+        margin: 0 em($fontLeading) 0 0;
+    }
+    
+}
+
+.span-phi-a {
+    @extend %column;
+
+    .keep & {
+        width: calc(#{100% * 0.618} - #{em($fontLeading * 0.5)});
+        margin: 0 em($fontLeading) 0 0;
+    }
+    @include mq($breakpointMedium) {
+        width: calc(#{100% * 0.618} - #{em($fontLeading * 0.5)});
+        margin: 0 em($fontLeading) 0 0;
+    }
+    
+}
+
+.span-phi-b {
+    @extend %column;
+
+    .keep & {
+        width: calc(#{100% * 0.382} - #{em($fontLeading * 0.5)});
+        margin: 0 em($fontLeading) 0 0;
+    }
+    @include mq($breakpointMedium) {
+        width: calc(#{100% * 0.382} - #{em($fontLeading * 0.5)});
+        margin: 0 em($fontLeading) 0 0;
+    }
+    
+}
+
+.span-all {
+    @extend %column;
+}
+
+// .row .row [class^="span-"] {
+//     width: 100%;
+//     margin: 0;
+// }
+
+// Remove right margin on last child div in all rows.
+.row > [class^="span-"]:last-child,
+.row > div:last-child {
+    margin-right: 0;
+}

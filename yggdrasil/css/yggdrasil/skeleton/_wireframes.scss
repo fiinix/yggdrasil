@@ -1,0 +1,56 @@
+.wireframe > [class^="span-"] {
+	background: $primaryColor;
+	color: contrast($primaryColor);
+	border-radius: $topRadius $rightRadius $bottomRadius $leftRadius;
+	padding: em($fontLeading /2);
+	text-align: center;
+	margin-bottom: em($fontLeading);
+}
+
+code,
+var {
+	font-family: Consolas, Monaco, monospace, sans-serif;
+	font-style: normal;
+	font-size: 0.78em;
+	padding: .1em .2em;
+	background: rgba(0,0,0,.1);
+	// color: contrast(white);
+	line-height: 1;
+}
+
+.primary-bg {
+	background-color: $primaryColor;
+	color: contrast($primaryColor) !important;
+}
+.secondary-bg {
+	background-color: $secondaryColor;
+	color: contrast($secondaryColor) !important;
+}
+.tertiary-bg {
+	background-color: $tertiaryColor;
+	color: contrast($tertiaryColor) !important;
+}
+.accent-bg {
+	background-color: $accentColor;
+	color: contrast($accentColor) !important;
+}
+
+.display-dot {
+	display: inline-block;
+	position: relative;
+	border-radius: 50%;
+	width: em($fontLeading *2);
+	height: em($fontLeading *2);
+
+	&:after {
+		content: " ";
+		display: block;
+		width: em($fontLeading *2.5);
+		height: em($fontLeading *2.5);
+		position: absolute;
+		top: em(- $fontLeading *0.25);
+		left: em(- $fontLeading *0.25);
+		border-radius: 50%;
+		border: em(2) dashed silver;
+	}
+}

@@ -1,0 +1,12 @@
+//Align helpers
+.align-left {}
+.align-center {
+	@include mq($breakpointMedium) {
+		text-align: center;
+	}
+}
+.align-right {
+	@include mq($breakpointMedium) {
+		text-align: right;
+	}
+}

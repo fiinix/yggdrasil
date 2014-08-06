@@ -1,0 +1,39 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+body {
+	font: $fontWeight #{$fontSize}px/#{number($fontLeading)} $fontFamily;
+	background: $whiteColor;
+	color: contrast($whiteColor);
+
+	border-top: em($fontLeading/4) solid $primaryColor;
+}
+
+
+.viewport {
+	width: 100%;
+	height: 100%;
+	display:table;
+	margin: 0 auto;
+	
+	padding: em($fontLeading /3);
+
+	@include mq($breakpointSmall) {
+		padding: em($fontLeading /2);
+	}
+	@include mq($breakpointMedium) {
+		padding: em($fontLeading);
+	}
+	@include mq($breakpointLarge) {
+		padding: em($fontLeading *2);
+	}
+
+}
+.container {
+	position: relative;
+	width:100%;
+	display: table-cell;
+	vertical-align: middle;
+}

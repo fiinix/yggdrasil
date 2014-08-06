@@ -1,0 +1,118 @@
+/**
+ * Default variables
+ */
+$primaryColor: #009899 !default;
+$colorScheme: split !default; /* analogous, triadic or split  */
+$deviate: 10 !default;
+
+// tetradic
+// square
+
+/**
+ * Prismatic
+ *
+ * Takes a dominant color value and returns complimentary hues; a supporting
+ * hue and an accented hue.
+ */
+
+@function secondaryColor($scheme: $colorScheme) {
+
+	/* [1] */
+	@if $scheme == monocromatic {
+		@return lighten($primaryColor, $deviate);
+	}
+
+	/* [2] */
+	@else if $scheme == analogous {
+		@return lighten(adjust-hue($primaryColor, 330%), $deviate);
+	}
+
+	/* [3] */
+	@else if $scheme == complementary {
+		@return lighten(adjust-hue($primaryColor, 180%), $deviate);
+	}
+
+	/* [4] */
+	@else if $scheme == triadic {
+		@return lighten(adjust-hue($primaryColor, 240%), $deviate);
+	}
+
+	/* [5] */
+	@else if $scheme == tetradic {
+		@return lighten(adjust-hue($primaryColor, 180%), $deviate);
+	}
+
+	/* [6] */
+	@else { //If $scheme == split
+		@return lighten(adjust-hue($primaryColor, 210%), $deviate);
+	}
+
+}
+
+@function tertiaryColor($scheme: $colorScheme) {
+
+	/* [1] */
+	@if $scheme == monocromatic {
+		@return darken($primaryColor, $deviate);
+	}
+
+	/* [2] */
+	@else if $scheme == analogous {
+		@return darken(adjust-hue($primaryColor, 30%), $deviate);
+	}
+
+	/* [3] */
+	@else if $scheme == complementary {
+		@return darken($primaryColor, $deviate);
+	}
+
+	/* [4] */
+	@else if $scheme == triadic {
+		@return darken(adjust-hue($primaryColor, 120%), $deviate);
+	}
+
+	/* [5] */
+	@else if $scheme == tetradic {
+		@return darken(adjust-hue($primaryColor, 330%), $deviate);
+	}
+
+	/* [6] */
+	@else { //If $scheme == split
+		@return darken(adjust-hue($primaryColor, 150%), $deviate);
+	}
+
+}
+
+@function accentColor($scheme: $colorScheme) {
+
+	/* [1] */
+	@if $scheme == monocromatic {
+		@return darken($primaryColor, ($deviate*2));
+	}
+
+	/* [2] */
+	@else if $scheme == analogous {
+		@return darken($primaryColor, $deviate);
+	}
+
+	/* [3] */
+	@else if $scheme == complementary {
+		@return darken(adjust-hue($primaryColor, 180%), ($deviate*2));
+	}
+
+	/* [4] */
+	@else if $scheme == triadic {
+		@return darken($primaryColor, $deviate);
+	}
+
+	/* [5] */
+	@else if $scheme == tetradic {
+		@return darken(adjust-hue($primaryColor, 150%), $deviate);
+	}
+
+	/* [6] */
+	@else { //If $scheme == split
+		@return darken($primaryColor, $deviate);
+	}
+
+}

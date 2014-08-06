@@ -1,0 +1,819 @@
+<!doctype html>
+<head>
+
+<meta charset='utf-8'>
+<title>Carlos Eriksson</title>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name='description' content=''>
+
+<!-- <link rel="stylesheet" href="css/default.css" type="text/css" media="screen" /> -->
+<link rel="stylesheet" href="css/yggdrasil.min.css" type="text/css" media="screen" />
+
+<link href='http://fonts.googleapis.com/css?family=Josefin+Slab:700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC:900|Erica+One|Alegreya:900' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+<div class="viewport">
+	<div class="container">
+
+		<div class="row">
+			<div class="span-all">
+				<h1>Yggdrasil (/ˈɪɡdrəsɪl/;)</h1>
+				<p>The highly opinionated no-bullshit framework that knows better than you.</p>
+				<blockquote>
+					<p>
+						In Norse mythology, Yggdrasil is an immense tree that is central in Norse cosmology, in connection to which the nine worlds exist.
+					</p>
+				</blockquote>
+				<p>Yggdrasil, 9 core branches; typography, flexible and fluid grid, better defaults (the way Nicholas always intended it), mobile-first responsive, </p>
+				<p>Yeah, another motherfucking framework.</p>
+				<p>And whilst some framworks aren't very opinionated, Yggdrasil knows better. No more settings you never change anyway or default you leave despite being warned against it. Yggdrasil knows how things should be and tells it with authority.</p>
+				
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="span-all align-center">	
+				<a href="#about" class="button">Tell me more</a>
+				<a href="git-link" class="button">Download from Github</a>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<div class="viewport">
+	<div class="container">
+		<div class="row">
+			<div class="span-all">
+				
+				<p>Yggdrasil, 9 core branches; typography, flexible and fluid grid, better defaults (the way Nicholas always intended it), mobile-first responsive, </p>
+
+				<p>You should start by asking yourself the very simple question of, "Do we really <em>need</em> another HTML+CSS Framework?" To which of course the answer is "No. No, we don't."</p>
+				<p>But here we are anyway.</p>
+				<p>Yet another collection of patterns for common markup and styles using relative sizes, margins and padding because… the future.</p>
+				<p>
+					The most advanced responsive front-end framework in the world. Mobile-First, Responsive, Semantic, WAI-ARIA and other buzzwords that actually <strong>are</strong> important.
+				</p>
+				<p><strong>grid (layouts), elements, styles, patterns</strong></p>
+	
+
+<blockquote>
+	<p>White space is to be regarded as an active element, not a passive background.</p>
+	<cite>Jan Tschichold</cite>
+</blockquote>
+
+<div class="row">
+	<div class="span-quarter primary-bg">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, nostrum.</p>
+	</div>
+	<div class="span-quarter secondary-bg">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, deserunt!</p>
+	</div>
+	<div class="span-quarter tertiary-bg">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, laudantium?</p>
+	</div>
+	<div class="span-quarter accent-bg">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, placeat!</p>
+	</div>
+</div>
+
+				<div class="row">
+					<div class="span-third">
+						<h3>Typography</h3>
+						<p>Oliver Reichenstein of Information Architecht wrote about how <a href="http://ia.net/blog/the-web-is-all-about-typography-period/">“The web is 95% typography”</a> back in 2006 and it's even more true today, which is why Yggdrasil gives you complete control to  typography with brilliant defaults. Every size and leading (<code>line-height</code>) matters.</p>
+					</div>
+					<div class="span-third">
+						<h3>Mobile-First &amp; Responsive</h3>
+						<p>blah blah</p>
+					</div>
+					<div class="span-third">
+						<h3>Flexible &amp; Fluid Grid</h3>
+						<p>Smarter, more semantic markup that doesn't change, even when the underlying grid does. With fractional naming, everything makes more sense. And unlike other frameworks, Yggdrasil avoids using HTML5 elements like <code>section</code> when it's not appropriate.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="span-third">
+						<h3>!Normalize</h3>
+						<p>Yggdrasil takes all your default typography, margin, padding, etc. and seamlessly makes it a part of normalizing. No more needless cascade overrides. <a href="http://necolas.github.io/normalize.css/">Normalize.css (v3.0.1)</a> and brings into the makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalizing.</p>
+						<p>Nicolas Gallagher and Jonathan Neal</p>
+						<p>Preserves useful defaults</p>
+					</div>
+					<div class="span-third">
+						<h3>Natural box layout</h3>
+						<p>Yggdrasil changes the <code>box-sizing</code> to <code>border-box</code> for all elements which applies a natural box layout model. It might be a small thing but it makes a world a difference, as <a href="http://www.paulirish.com/2012/box-sizing-border-box-ftw/">recommended by Paul Irish</a>.</p>
+					</div>
+					<div class="span-third">
+						<h3>Sass</h3>
+						<p>Yggdrasil is built from the ground up with pre-processing using Sass, letting you use features like variables, nesting, mixins, inheritance and other nifty goodies that make writing CSS fun again.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="span-third">
+						<h3>Accessible (a11y)</h3>
+						<p>The web shouldn't be limited to the few but available to everyone. Yggdrasil puts usability, accessibility and performance optimisation in the front seat and not as an afterthought.</p>
+					</div>
+					<div class="span-third">
+						<h3>Pattern library</h3>
+						<p>Nenver struggle to mark up a <code>form</code> again, Yggdrasil comes with an assortment of the most common markup patterns, including Media components, Hero units, Tooltips and Carousels.</p>
+					</div>
+					<div class="span-third">
+						<h3>Prismatic &amp; Polarize</h3>
+						<p>Yggdrasil and its Prismatic will generate an appropriate color scheme based on a single value. Coupled with Polarize, your texts will always have sufficient contrast.</p>
+						<p>Everything is generated from <var>$primaryColor</var>, which you set in your <var>_theme</var> file.</p>
+						<p>Choose between Analogous, Triadic or Split color models and Yggdrasil will take care of the rest, including contrast for text colors (from perceived brightness instead of lightness).</p>
+					</div>
+				</div>
+
+				<p>
+
+Typography
+9, 10, 11, 12, 14, 16, 18, 21, 24, 30, 48, 60, 72
+9/12 14/8 21/27
+					
+Scaffolding
+Normalize and reset
+Body type and links
+Grid system
+Layouts
+
+Base CSS
+Headings, body, etc
+Code and pre
+Labels and badges
+Tables
+Forms
+Buttons
+Icons
+
+Components
+Button groups and dropdowns
+Navs, tabs, and pills
+Navbar
+Breadcrumbs
+Pagination
+Pager
+Thumbnails
+Alerts
+Progress bars
+Hero unit
+Media component
+
+JS Components
+Tooltips
+Popovers
+Modals
+Dropdowns
+Collapse
+Carousel
+
+Miscellaneous
+Wells
+Close icon
+Utilities
+Component animations
+
+Responsive
+Visible/hidden classes
+Narrow tablets and below (<767px)
+Tablets to desktops (767-979px)
+Large desktops (>1200px)
+Responsive navbar
+
+				</p>
+				<p><a href="#forms">Forms</a></p>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="viewport">
+	<div class="container">
+		<div class="row">
+			<div class="span-third">
+				<p>b</p>
+			</div>
+			<div class="span-two-thirds">
+				<h1>Typography</h1>
+				<p>The headings</p>
+				<h1><code>&lt;h1&gt;</code> Just keep examining every low bid quoted for zinc etchings.</h>
+				<h2><code>&lt;h2&gt;</code> Just keep examining every low bid quoted for zinc etchings.</h2>
+				<h3><code>&lt;h3&gt;</code> Just keep examining every low bid quoted for zinc etchings.</h3>
+				<h4><code>&lt;h4&gt;</code> Just keep examining every low bid quoted for zinc etchings.</h4>
+				<h5><code>&lt;h5&gt;</code> Just keep examining every low bid quoted for zinc etchings.</h5>
+				<h6><code>&lt;h6&gt;</code> Just keep examining every low bid quoted for zinc etchings.</h6>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="viewport">
+	<div class="container">
+		<div class="row">
+			<div class="span-all">
+				<blockquote>
+					<p>Start with the small screen first, then expand until it looks like shit. Time for a breakpoint!</p>
+					<cite><a href="http://bradfrostweb.com/blog/mobile/bdconf-stephen-hay-presents-responsive-design-workflow/">Stephen Hay</a></cite>
+				</blockquote>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="viewport">
+	<div class="container">
+		<div class="row">
+			<div class="span-1/2">
+				<h1>Heading 1</h1>
+				<h2>Heading 2</h2>
+				<h3>Heading 3</h3>
+				<h4>Heading 4</h4>
+				<h5>Heading 5</h5>
+				<h6>Heading 6</h6>
+			</div>
+			<div class="span-1/2">
+				<h2>Headings</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi officia corrupti, expedita ad, cumque consectetur maxime incidunt, placeat aspernatur aliquid numquam eos reiciendis ab culpa.</p>
+				<p class="h0">Heading 0</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="viewport">
+	<div class="container">
+		<div class="row">
+			<div class="span-1/2 align-center">
+				<p>
+					<span class="display-dot primary-bg"></span>
+					<span class="display-dot secondary-bg"></span>
+					<span class="display-dot tertiary-bg"></span>
+					<span class="display-dot accent-bg"></span>
+				</p>
+			</div>
+			<div class="span-1/2">
+				<h2>Colours</h2>
+				<p class="lead">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, voluptas consectetur blanditiis totam architecto tenetur!
+				</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, sequi.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="viewport">
+	<div class="container">
+
+		<div class="row">
+			<div class="span-all">
+				<h2>Scaffolding</h2>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="span-half">
+				<blockquote>
+					<p>“The grid system is an aid, not a guarantee. […] But one must learn how to use the grid system; it is something that has to be practiced.”</p>
+					<cite>Josef Müller Brockmann, <a href="linktobook">The Graphic Artist and His Design Problems</a></cite>
+				</blockquote>
+
+				<p>Are you tired of memorizing obscure column names that hold little semantic value? Look no further, Yggdrasil is the salvation you've been looking for.</p>
+				<p>Instead of confusing names, Yggdrasil uses a fractional naming scheme for its more common columns, i.e. when you want a column that spans half the width, you simply give it a class of <code>.span-half</code>.</p>
+				<p>Always using the simplest fraction, i.e. there's no <code>.two-quarter</code> because that would be a <code>half</code>.</p>
+			</div>
+			<div class="span-half">
+				<!-- Grid -->
+				<div class="row wireframe">
+			<div class="span-quarter">
+				<code>quarter</code>
+			</div>
+			<div class="span-quarter">
+				<code>quarter</code>
+			</div>
+			<div class="span-quarter">
+				<code>quarter</code>
+			</div>
+			<div class="span-quarter">
+				<code>quarter</code>
+			</div>
+		</div>
+
+		<div class="row wireframe">
+			<div class="span-third">
+				<code>third</code>
+			</div>
+			<div class="span-third">
+				<code>third</code>
+			</div>
+			<div class="span-third">
+				<code>third</code>
+			</div>
+		</div>
+
+		<div class="row wireframe">
+			<div class="span-half">
+				<code>half</code>
+			</div>
+			<div class="span-half">
+				<code>half</code>
+			</div>
+		</div>
+
+		<div class="row wireframe">
+			<div class="span-all">
+				<code>all</code>
+			</div>
+		</div>
+
+		<div class="row wireframe">
+			<div class="span-third">
+				<code>third</code>
+			</div>
+			<div class="span-two-thirds">
+				<code>two-third</code>
+			</div>
+		</div>
+
+		<div class="row wireframe">
+			<div class="span-quarter">
+				<code>quarter</code>
+			</div>
+			<div class="span-three-quarters">
+				<code>three-quarter</code>
+			</div>
+		</div>
+
+		<div class="row wireframe">
+			<div class="span-phi-a">
+				<code>phi-a</code>
+			</div>
+			<div class="span-phi-b">
+				<code>phi-b</code>
+			</div>
+		</div>
+				<!-- /Grid -->
+			</div>
+		</div>
+
+
+
+		<!-- Grid -->
+				<div class="row wireframe">
+			<div class="span-quarter">
+				<code>quarter</code>
+			</div>
+			<div class="span-quarter">
+				<code>quarter</code>
+			</div>
+			<div class="span-quarter">
+				<code>quarter</code>
+			</div>
+			<div class="span-quarter">
+				<code>quarter</code>
+			</div>
+		</div>
+
+		<div class="row wireframe">
+			<div class="span-third">
+				<code>third</code>
+			</div>
+			<div class="span-third">
+				<code>third</code>
+			</div>
+			<div class="span-third">
+				<code>third</code>
+			</div>
+		</div>
+
+		<div class="row wireframe">
+			<div class="span-half">
+				<code>half</code>
+			</div>
+			<div class="span-half">
+				<code>half</code>
+			</div>
+		</div>
+
+		<div class="row wireframe">
+			<div class="span-all">
+				<code>all</code>
+			</div>
+		</div>
+
+		<div class="row wireframe">
+			<div class="span-third">
+				<code>third</code>
+			</div>
+			<div class="span-two-third">
+				<code>two-third</code>
+			</div>
+		</div>
+
+		<div class="row wireframe">
+			<div class="span-quarter">
+				<code>quarter</code>
+			</div>
+			<div class="span-three-quarter">
+				<code>three-quarter</code>
+			</div>
+		</div>
+
+		<div class="row wireframe">
+			<div class="span-phi-a">
+				<code>phi-a</code>
+			</div>
+			<div class="span-phi-b">
+				<code>phi-b</code>
+			</div>
+		</div>
+				<!-- /Grid -->
+
+	</div>
+</div>
+
+
+<div class="viewport">
+	<div class="container">
+
+		<div class="row wireframe">
+			<div class="span-2">
+				<code>2</code>
+			</div>
+			<div class="span-2">
+				<code>2</code>
+			</div>
+			<div class="span-2">
+				<code>2</code>
+			</div>
+			<div class="span-2">
+				<code>2</code>
+			</div>
+			<div class="span-2">
+				<code>2</code>
+			</div>
+			<div class="span-2">
+				<code>2</code>
+			</div>
+			<div class="span-2">
+				<code>2</code>
+			</div>
+			<div class="span-2">
+				<code>2</code>
+			</div>
+			<div class="span-2">
+				<code>2</code>
+			</div>
+			<div class="span-2">
+				<code>2</code>
+			</div>
+			<div class="span-2">
+				<code>2</code>
+			</div>
+			<div class="span-2">
+				<code>2</code>
+			</div>
+		</div>
+
+		<div class="row wireframe">
+			<div class="span-3">
+				<code>3</code>
+			</div>
+			<div class="span-3">
+				<code>3</code>
+			</div>
+			<div class="span-3">
+				<code>3</code>
+			</div>
+			<div class="span-3">
+				<code>3</code>
+			</div>
+			<div class="span-3">
+				<code>3</code>
+			</div>
+			<div class="span-3">
+				<code>3</code>
+			</div>
+			<div class="span-3">
+				<code>3</code>
+			</div>
+			<div class="span-3">
+				<code>3</code>
+			</div>
+		</div>
+
+		<div class="row wireframe">
+			<div class="span-5">
+				<code>5</code>
+			</div>
+			<div class="span-13">
+				<code>13</code>
+			</div>
+			<div class="span-6">
+				<code>6</code>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<div class="viewport">
+	<div class="container">
+		<div class="row wireframe">
+			<div class="span-quarter">
+				
+			</div>
+			<div class="span-quarter">
+				<p>half</p>
+			</div>
+			<div class="span-quarter">
+				<p>half</p>
+			</div>
+			<div class="span-quarter">
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="viewport">
+	<div class="container">
+		<div class="row">
+			<div class="span-half">
+				<h2>Text-level semantics</h2>
+				<p>
+					blah.
+				</p>
+			</div>
+			<div class="span-half">
+				<h3>Examples:</h3>
+				<table>
+					<thead>
+						<tr>
+							<th>Element</th>
+							<th>Description</th>
+							<th>Example</th>
+						</tr>
+					</thead>
+					<tfoot>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tfoot>
+					<tbody>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+				<p>
+					<code>&lt;abbr&gt;</code> &mdash; <abbr title="Cascading Style Sheets">CSS</abbr>
+				</p>
+				<p>
+					<code>&lt;cite&gt;</code> &mdash; <cite><a href="http://en.wikipedia.org/wiki/Poetic_Edda">Poetic Edda</a></cite>
+				</p>
+				<p>
+					<code>&lt;code&gt;</code> &mdash; <code>thor</code>
+				</p>
+				<p>
+					<code>&lt;em&gt;</code> &mdash; <em>Emphasis</em>
+				</p>
+				<p>
+					<code>&lt;mark&gt;</code> &mdash; <mark>Mark text</mark>
+				</p>
+				<p>
+					<code>&lt;kbd&gt;</code> &mdash; <kbd>Ctrl + Alt + J</kbd>
+				</p>
+				<p>
+					<code>&lt;strong&gt;</code> &mdash; <strong>Importance</strong>
+				</p>
+				<p>
+					<code>&lt;cite&gt;</code> &mdash; <cite><a href="http://en.wikipedia.org/wiki/Poetic_Edda">Poetic Edda</a></cite>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="viewport">
+	<div class="container">
+
+		<div class="row">
+			<div class="span-quarter">
+				<h3>Heading Three</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum sint necessitatibus, alias reprehenderit dolores cum?</p>
+			</div>
+			<div class="span-quarter">
+				<h3>Heading Three</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad quaerat, ea ipsam obcaecati quis minima.</p>
+			</div>
+			<div class="span-quarter">
+				<h3>Heading Three</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error rem optio magnam vitae, omnis vel.</p>
+			</div>
+			<div class="span-quarter">
+				<h3>Heading Three</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam officiis, pariatur sunt! Tenetur, placeat, optio!</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="span-half">
+				<h2>Heading Two</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere consequatur aliquid, quia eaque placeat culpa, veritatis molestias consequuntur? Sunt, numquam.</p>
+			</div>
+			<div class="span-half">
+				<h2>Heading Two</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum deleniti nemo asperiores provident, consequuntur hic ea earum in aperiam, incidunt.</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="span-12">
+				<h2>Heading 2</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam aut labore a doloremque veritatis? Quis, voluptatum iure! Eveniet, eum repellendus.</p>
+			</div>
+			<div class="span-12">
+				<h2>Heading 2</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius cum quia quae ab ut nesciunt aliquam veritatis quos ea expedita.</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="span-8">
+				<h2>Buttons</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, suscipit, atque. Nobis expedita reiciendis mollitia itaque vero molestias sequi dicta dolores quisquam quasi quibusdam cupiditate praesentium aliquid cumque beatae, doloribus nam? Beatae quam, ratione voluptate accusamus, totam reprehenderit repellat quas aliquam est. Consequatur quos neque aperiam! Aperiam incidunt labore, placeat.</p>
+			</div>
+			<div class="span-16">
+				<h3>Examples</h3>
+				<p>
+					<a href="link.htm" class="button"><code>.button</code></a>
+					<a href="link.htm" class="button--small"><code>.button</code></a>
+					<a href="link.htm" class="button--large"><code>.button</code></a>
+				</p>
+				<p>
+					<a href="" class="button"><code>.button</code></a>
+					<a href="" class="button--small"><code>.button</code></a>
+					<a href="" class="button--large"><code>.button</code></a>
+				</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="span-all">
+				<h1>snnb 2</h1>
+				<blockquote>
+					<p>
+						The wolverine has a reputation for ferocity and strength out of proportion to its size, with the documented ability to kill prey many times larger than itself.
+					</p>
+				</blockquote>
+				<p>Yet another collection of patterns for common markup and styles using relative sizes, margins and padding because… the future.</p>
+				<p>
+					The most advanced responsive front-end framework in the world. Mobile-First, Responsive, Semantic, WAI-ARIA and other buzzwords that actually <strong>are</strong> important.
+				</p>
+				<p>basic outline</p>
+				<p>
+					grid (layouts), elements, styles, patterns
+				</p>
+				<p><a href="#forms">Forms</a></p>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<!-- <section id="colors-1" class="seagreen">
+	<div class="container">
+		<div class="row">
+			<div class="col6">
+				<h2>Colors</h2>
+				<p>Explany things here.</p>
+			</div>
+			<div class="col6">
+				<h3>Bronze</h3>
+			<p>
+				<span class="color-sample bronze"></span> 30&deg;, 65%, 50% (#D2802D)<br>
+			</p>
+			<hr>
+			<p>
+				<small><span class="color-sample bronze lighter"></span> 30&deg;, 70%, 55% (#DD8C3C)<br></small>
+				
+				<small><span class="color-sample bronze darker"></span> 30&deg;, 60%, 45% (#B8732E)</small>
+			</p>
+			<h3>Gold</h3>
+			<p>
+				<span class="color-sample gold"></span> 150&deg;, 65%, 50% (#D2A82C)
+			</p>
+			<hr>
+			<p>
+				<small><span class="color-sample gold lighter"></span> 150&deg;, 70%, 55% (#DCB43B)<br></small>
+				<small><span class="color-sample gold darker"></span> 150&deg;, 60%, 45% (#B7952D)</small>
+			</p>
+			<h3>Sea Green</h3>
+			<p>
+				<span class="color-sample seagreen"></span> #2CD27F<br>
+				<span class="color-sample seagreen lighter"></span> #3BDC8C<br>
+				<span class="color-sample seagreen darker"></span> #2DB772
+			</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="form-1">
+	<div class="container">
+		<div class="row">
+			<div class="col4">
+				<h2>Links</h2>
+				<p>Explany things here.</p>
+			</div>
+			<div class="col8">
+			<p>
+				<a href="koko" class="btn bronze small">Small button</a>
+				<a href="kokko" class="btn bronze">Default button</a>
+				<a href="sg" class="btn bronze large">Large button</a>
+			</p>
+			<p>
+				<a href="koko" class="btn gold small">Small button</a>
+				<a href="koko" class="btn gold">Default button</a>
+				<a href="asgd" class="btn gold large">Large button</a>
+			</p>
+			<p>
+				<a href="koko" class="btn seagreen small">Small button</a>
+				<a href="koko" class="btn seagreen">Default button</a>
+				<a href="asgd" class="btn seagreen large">Large button</a>
+			</p>
+			<p>
+				<a href="#" class="btn small is-disabled">Small button</a>
+				<a href="#" class="btn is-disabled">Default button</a>
+				<a href="#" class="btn large is-disabled">Large button</a>
+			</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="form-1">
+	<div class="container">
+		<div class="row">
+			<div class="col6">
+				<h2>Traditional form</h2>
+				<p>Explany things here.</p>
+			</div>
+			<div class="col6">
+				<form action="/" class="form">
+					<fieldset>
+						<legend>Details</legend>
+						<div>
+							<label for="name">Your name</label>
+							<input type="text" id="name" name="name" placeholder="Jane Smith" tabindex="1">
+						</div>
+						<div>
+							<label for="email">Email address</label>
+							<input type="email" id="email" name="email" placeholder="jane.smith@example.co.uk" tabindex="2">
+						</div>
+						<div>
+							<label for="gender">Your gender</label>
+							<select name="gender" id="gender" tabindex="3">
+								<option value="0">I&rsquo;d rather not say</option>
+								<option value="female">Female</option>
+								<option value="male">Male</option>
+							</select>
+						</div>
+						<div>
+							<label for="radio-option-1">
+								<input type="radio" name="option-group" id="radio-option-1" value="1" tabindex="4"> Yes</label>
+							<label for="radio-option-2">
+							<input type="radio" name="option-group" id="radio-option-2" value="2" tabindex="5"> No</label>
+						</div>
+						<div>
+							<label for="checkbox-option-1">
+							<input type="checkbox" id="checkbox-option-1" value="1" tabindex="6"> Yes</label>
+							<label for="checkbox-option-2">
+							<input type="checkbox" id="checkbox-option-2" value="0" tabindex="7"> No</label>
+						</div>
+						<div>
+							<label for="message">Message</label>
+							<textarea name="message" id="message" placeholder="Hi, I was wondering…"></textarea>
+						</div>
+						<div>
+							<button type="submit" class="btn seagreen">Submit</button>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+</section> -->
+
+</body>
+</html>

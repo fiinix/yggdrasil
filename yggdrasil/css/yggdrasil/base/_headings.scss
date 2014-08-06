@@ -1,0 +1,65 @@
+/**
+ * Set global styling for headings
+ */
+.h0, h1, h2, h3, h4, h5, h6, .h0, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-weight: $headingWeight;
+	font-family: $headingFamily;
+	margin: 0 0 .5em 0;
+}
+.h0 {
+	font-size: pow($fontScale, 5) +em;
+	line-height: 1;
+}
+h1,
+.h1 {
+	// font-size: em(map-get($headingH1, size));
+	// line-height: em(map-get($headingH1, leading),map-get($headingH1, size));
+	// margin-bottom: map-get($headingH1, leading)/map-get($headingH1, size) *0.5em;
+	// margin-bottom: map-get($headingH1, size)/$fontLeading +0em;
+	color: $secondaryColor;
+	font-size: pow($fontScale, 4) +em;
+	line-height: pow($fontScale, 0);
+}
+h2,
+.h2 {
+	// font-size: em(map-get($headingH2, size));
+	// line-height: em(map-get($headingH2, leading),map-get($headingH2, size));
+	// margin-bottom: map-get($headingH2, leading)/map-get($headingH2, size) *0.5em;
+	color: $tertiaryColor;
+	font-size: pow($fontScale, 3) +em;
+	line-height: pow($fontScale, 0.25) +em;
+}
+h3,
+.h3 {
+	// font-size: em(map-get($headingH3, size));
+	// line-height: em(map-get($headingH3, leading),map-get($headingH3, size));
+	// margin-bottom: map-get($headingH3, leading)/map-get($headingH3, size) *0.5em;
+	font-size: pow($fontScale, 2) +em;
+	line-height: pow($fontScale, 0.5) +em;;
+}
+h4,
+.h4 {
+	// font-size: em(map-get($headingH4, size));
+	// line-height: em(map-get($headingH4, leading),map-get($headingH4, size));
+	// margin-bottom: map-get($headingH4, leading)/map-get($headingH4, size) *0.5em;
+	font-size: pow($fontScale, 1) +em;
+	line-height: pow($fontScale, 0.75) +em;
+}
+h5,
+.h5 {
+	// font-size: em(map-get($headingH5, size));
+	// line-height: em(map-get($headingH5, leading),map-get($headingH5, size));
+	// margin-bottom: map-get($headingH5, leading)/map-get($headingH5, size) *0.5em;
+	font-size: pow($fontScale, 0) +em;
+	line-height: $fontLeading/$fontSize;
+	line-height: pow($fontScale, 1) +em;
+}
+h6,
+.h6 {
+	// font-size: em(map-get($headingH6, size));
+	// line-height: em(map-get($headingH6, leading),map-get($headingH6, size));
+	// margin-bottom: map-get($headingH6, leading)/map-get($headingH6, size) *0.5em;
+	font-size: em($fontSize/$fontScale);
+	line-height: 1;
+	line-height: pow($fontScale, 1.33) +em;
+}

@@ -1,0 +1,58 @@
+%button {
+	text-decoration: none;
+
+	display: inline-block;
+	padding: $topPadding $rightPadding $bottomPadding $leftPadding;
+	margin: 0 .75em .75em 0;
+	border-radius: $topRadius $leftRadius $bottomRadius $rightRadius;
+
+	background: $primaryColor;
+	color: contrast($primaryColor);
+
+	&:visited {
+		text-decoration: none;
+		background: desaturate(darken($primaryColor, $deviate), $deviate);
+		color: contrast(desaturate(darken($primaryColor, $deviate), $deviate));
+	}
+
+	@include state {
+		text-decoration: none;
+		background: lighten($primaryColor, $deviate);
+		color: contrast(lighten($primaryColor, $deviate));
+	}
+	@include transition;
+}
+
+[class^="button"] {
+	@extend %button;
+}
+.button--small {
+	font-size: .75em;
+	background: $tertiaryColor;
+	color: contrast($tertiaryColor);
+
+	&:visited {
+		background: desaturate(darken($tertiaryColor, $deviate), $deviate);
+		color: contrast(desaturate(darken($tertiaryColor, $deviate), $deviate));
+	}
+
+	@include state {
+		background: lighten($tertiaryColor, $deviate);
+		color: contrast(lighten($tertiaryColor, $deviate));
+	}
+}
+.button--large {
+	font-size: 1.25em;
+	background: $secondaryColor;
+	color: contrast($secondaryColor);
+
+	&:visited {
+		background: desaturate(darken($secondaryColor, $deviate), $deviate);
+		color: contrast(desaturate(darken($secondaryColor, $deviate), $deviate));
+	}
+
+	@include state {
+		background: lighten($secondaryColor, $deviate);
+		color: contrast(lighten($secondaryColor, $deviate));
+	}
+}

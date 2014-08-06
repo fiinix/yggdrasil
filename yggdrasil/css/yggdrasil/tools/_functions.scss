@@ -1,0 +1,20 @@
+/* em 
+========================================================================== */
+@function em($target, $context: $fontSize) {
+	@return $target/$context +em
+}
+/* rem 
+========================================================================== */
+@function rem($target, $context: $fontSize) {
+	@return $target/$context +rem
+}
+/* number (no unit) 
+========================================================================== */
+@function number($target, $context: $fontSize) {
+	@return $target/$context
+}
+/* strip units 
+========================================================================== */
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
+ }

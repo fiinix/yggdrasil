@@ -1,0 +1,16 @@
+a {
+	color: $primaryColor;
+	text-decoration: none;
+
+	&:visited {
+		color: $tertiaryColor;
+		text-decoration: underline;
+	}
+
+	@include state {
+		color: $secondaryColor;
+		text-decoration: underline;
+		outline: 0;
+	}
+	@include transition;
+}
